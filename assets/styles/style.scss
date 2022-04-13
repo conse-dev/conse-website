@@ -615,6 +615,11 @@ header {
     span {
         font-weight: 600;
     }
+
+    a {
+        display: none;
+        width: fit-content;
+    }
 }
 
 .tagline {
@@ -1170,6 +1175,12 @@ footer {
 
     .header-menu {
         display: none;
+    }
+
+    .hero-section__tagline {
+        a {
+            display: flex;
+        }
     }
 
     .header__burger {
