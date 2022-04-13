@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>conse - software development company</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+
+<body>
+    <div class="contact-us-popup">
+        <div class="container contact-us__container">
+            <svg class="contact-us__close" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2L2 20" stroke="#606060" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M20 20L2 2" stroke="#606060" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <div class="contact-us__description">
+                <h2>
+                    How can we help?
+                </h2>
+                <p>
+                    We'd love to hear what you are working on. Drop us a message here and we'll get back to you as soon
+                    as
+                    possible
+                </p>
+            </div>
+            <div class="contact-us__columns">
+                <form method="post" class="contact-us__form">
+                    <label class="contact-us__form__label" for="contact-us__form__name">
+                        <span>Name</span>
+                        <input type="text" name="name" id="contact-us__form__name" placeholder="Type here">
+                    </label>
+                    <label class="contact-us__form__label" for="contact-us__form__email">
+                        <span>Email</span>
+                        <input type="email" name="email" id="contact-us__form__email" placeholder="Type here">
+                    </label>
+                    <label class="contact-us__form__label" for="contact-us__form__message">
+                        <span>Message</span>
+                        <textarea name="message" id="contact-us__form__message" placeholder="Type here"></textarea>
+                    </label>
+                    <div class="contact-us__form__wrapper">
+                        <button type="submit">Send</button>
+                        <label for="contact-us__form__file">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.75003 18H23.75C24.2805 18 24.7892 17.7892 25.1642 17.4142C25.5393 17.0391 25.75 16.5304 25.75 16C25.75 15.4696 25.5393 14.9608 25.1642 14.5858C24.7892 14.2107 24.2805 14 23.75 14H5.75003C3.59521 14 1.84839 15.7909 1.84839 18C1.84839 20.2091 3.59521 22 5.75003 22H23.9993C25.5906 22 27.1167 21.3679 28.2419 20.2426C29.3672 19.1174 29.9993 17.5913 29.9993 16C29.9993 14.4087 29.3672 12.8826 28.2419 11.7574C27.1167 10.6321 25.5906 10 23.9993 10H9.99929"
+                                    stroke="#606060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Add file</span>
+                            <input type="file" name="file" id="contact-us__form__file">
+                        </label>
+                    </div>
+                </form>
+                <div class="contact-us__socials">
+                    <h4>Email</h4>
+                    <a href="mailto:hello@conse.in" class="contact-us__mail">hello@conse.in</a>
+                    <h4>Social networks</h4>
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/yura-senkovych" class="footer__social">
+                            <img src="/assets/images/logos/LinkedinLogo.svg" alt="Linkedin Logo">
+                            LinkedIn
+                        </a>
+                        <a href="https://www.facebook.com/yusenkovych" class="footer__social">
+                            <img src="/assets/images/logos/FacebookLogo.svg" alt="Facebook Logo">
+                            Facebook
+                        </a>
+                        <a href="https://www.instagram.com/yan_baklan/" class="footer__social">
+                            <img src="/assets/images/logos/InstagramLogo.svg" alt="Instagram Logo">
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <svg class="mobile-menu__close" width="22" height="22" viewBox="0 0 22 22" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 2L2 20" stroke="#606060" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M20 20L2 2" stroke="#606060" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <div class="mobile-menu__container">
+            <div class="mobile-menu__links">
+                <a href="#services-section" class="mobile-menu__link">Our services</a>
+                <a href="#" class="mobile-menu__link contact-us-popup-js">Contact us</a>
+            </div>
+            <div class="mobile-menu__mail">
+                <span>Email</span>
+                <a href="mailto:hello@conse.in">hello@conse.in</a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container header__container">
+            <a href="#hero-section" class="header__logo">
+                <img src="/assets/images/logo.svg" alt="conse logo">
+            </a>
+            <nav class="header-menu">
+                <a href="#services-section" class="header-menu__link">Our services</a>
+                <a href="#" class="header-menu__cta contact-us-popup-js">Contact us</a>
+            </nav>
+            <div class="header__burger">
+                <div class="header__burger--top"></div>
+                <div class="header__burger--bottom"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section" id="hero-section">
+            <div class="container hero-section__container">
+                <div class="hero-section__tagline">
+                    <h1 class="tagline">
+                        Delivering spot-on software solutions for you
+                    </h1>
+                    <p>
+                        Business consulting, design & web development
+                        <span>with a deliberate approach</span>
+                    </p>
+                </div>
+                <a href="#services-section" class="hero-section__scroll">
+                    <span>scroll</span>
+                    <svg width="24" height="124" viewBox="0 0 24 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.5 2C13.5 1.17157 12.8284 0.5 12 0.5C11.1716 0.5 10.5 1.17157 10.5 2L13.5 2ZM10.9393 123.061C11.5251 123.646 12.4749 123.646 13.0607 123.061L22.6066 113.515C23.1924 112.929 23.1924 111.979 22.6066 111.393C22.0208 110.808 21.0711 110.808 20.4853 111.393L12 119.879L3.51471 111.393C2.92893 110.808 1.97918 110.808 1.39339 111.393C0.807607 111.979 0.807607 112.929 1.39339 113.515L10.9393 123.061ZM10.5 2L10.5 122L13.5 122L13.5 2L10.5 2Z"
+                            fill="#606060" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <section class="services-section" id="services-section">
+            <div class="container services-section__container">
+                <h2>Our services</h2>
+                <div class="services-list">
+                    <div class="service">
+                        <div class="service__info">
+                            <span class="service__id">
+                                01
+                            </span>
+                            <div class="service__description">
+                                <h3>
+                                    Business consulting
+                                </h3>
+                                <p>
+                                    Give your product’s idea a shape. Plan and evaluate the essential features of your
+                                    product to accomplish your business goals and eliminate possible mistakes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service__image">
+                            <span class="service__id">
+                                01
+                            </span>
+                            <img src="/assets/images/business-consult.png" alt="front-end development illustration">
+                        </div>
+                    </div>
+                    <div class="service service_alternative">
+                        <div class="service__info">
+                            <span class="service__id">
+                                02
+                            </span>
+                            <div class="service__description">
+                                <h3>
+                                    Product design
+                                </h3>
+                                <p>
+                                    Craft delightful user experiences for your digital products. Advance your vital
+                                    business metrics through excellent usability on the interfaces.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service__image">
+                            <span class="service__id">
+                                02
+                            </span>
+                            <img src="/assets/images/product-design.png" alt="front-end development illustration">
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service__info">
+                            <span class="service__id">
+                                03
+                            </span>
+                            <div class="service__description">
+                                <h3>
+                                    Web development
+                                </h3>
+                                <p>
+                                    Create beautiful, agile and secure web applications engineered according to your
+                                    unique
+                                    needs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service__image">
+                            <span class="service__id">
+                                03
+                            </span>
+                            <img src="/assets/images/front-dev.png" alt="front-end development illustration">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="build-together-section" id="build-together-section">
+            <div class="build-together__background">
+                <img src="/assets/images/backgrounds/build-together-left-bg.png" alt="">
+                <img src="/assets/images/backgrounds/build-together-right-bg.png" alt="">
+            </div>
+            <div class="container build-together-section__container">
+                <h2>
+                    Let’s create something <span>together!</span>
+                </h2>
+                <a href="#" class="build-together__cta contact-us-popup-js">Contact us</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__navigation">
+                <div class="footer__contacts">
+                    <h4>Social networks</h4>
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/yura-senkovych" class="footer__social">
+                            <img src="/assets/images/logos/LinkedinLogo.svg" alt="Linkedin Logo">
+                            LinkedIn
+                        </a>
+                        <a href="https://www.facebook.com/yusenkovych" class="footer__social">
+                            <img src="/assets/images/logos/FacebookLogo.svg" alt="Facebook Logo">
+                            Facebook
+                        </a>
+                        <a href="https://www.instagram.com/yan_baklan/" class="footer__social">
+                            <img src="/assets/images/logos/InstagramLogo.svg" alt="Instagram Logo">
+                            Instagram
+                        </a>
+                    </div>
+                    <h4>Email</h4>
+                    <a href="mailto:hello@conse.in" class="footer__mail">hello@conse.in</a>
+                </div>
+                <div class="footer__menu">
+                    <a href="#services-section" class="footer-menu__link">Our services</a>
+                    <a href="#" class="footer-menu__link contact-us-popup-js">Contact us</a>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__credentials">
+                <img src="/assets/images/logo.svg" alt="conse logo">
+                <p>software development company</p>
+                <span>&copy;2022</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- javascript -->
+    <script type="module" src="/assets/js/main.js"></script>
+</body>
+
+</html>
