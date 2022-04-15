@@ -10,7 +10,20 @@
     <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 
-<body>
+<body class="disable-scroll-js">
+    <!-- Loader -->
+    <div class="page-loader">
+        <div class="container page-loader__container">
+            <img src="/assets/images/logo.svg" alt="conse logo">
+            <svg class="page-loader__spinner" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M31 16C31 19.4925 29.7813 22.8755 27.5542 25.5656C25.327 28.2558 22.2309 30.0845 18.7998 30.7364C15.3688 31.3883 11.8178 30.8225 8.75915 29.1366C5.70055 27.4507 3.32608 24.7504 2.04522 21.5013C0.764352 18.2522 0.657373 14.658 1.74273 11.3384C2.82808 8.0189 5.03774 5.18214 7.99066 3.31732C10.9436 1.4525 14.4547 0.676515 17.9184 1.12319C21.3822 1.56985 24.5816 3.21118 26.9648 5.76412"
+                    stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
+    </div>
+    <!-- Contact us popup -->
     <div class="contact-us-popup">
         <div class="container contact-us__container">
             <svg class="contact-us__close" width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -34,19 +47,20 @@
                 <form method="post" class="contact-us__form">
                     <label class="contact-us__form__label" for="contact-us__form__name">
                         <span>Name</span>
-                        <input type="text" name="name" id="contact-us__form__name" placeholder="Type here">
+                        <input type="text" name="name" id="contact-us__form__name" placeholder="Type here" required>
                     </label>
                     <label class="contact-us__form__label" for="contact-us__form__email">
                         <span>Email</span>
-                        <input type="email" name="email" id="contact-us__form__email" placeholder="Type here">
+                        <input type="email" name="email" id="contact-us__form__email" placeholder="Type here" required>
                     </label>
                     <label class="contact-us__form__label" for="contact-us__form__message">
                         <span>Message</span>
-                        <textarea name="message" id="contact-us__form__message" placeholder="Type here"></textarea>
+                        <textarea name="message" id="contact-us__form__message" placeholder="Type here"
+                            required></textarea>
                     </label>
                     <div class="contact-us__form__wrapper">
                         <button type="submit">Send</button>
-                        <label for="contact-us__form__file">
+                        <!-- <label for="contact-us__form__file">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -55,7 +69,7 @@
                             </svg>
                             <span>Add file</span>
                             <input type="file" name="file" id="contact-us__form__file">
-                        </label>
+                        </label> -->
                     </div>
                 </form>
                 <div class="contact-us__socials">
@@ -67,19 +81,20 @@
                             <img src="/assets/images/logos/LinkedinLogo.svg" alt="Linkedin Logo">
                             LinkedIn
                         </a>
-                        <a href="https://www.facebook.com/yusenkovych" class="footer__social">
+                        <!-- <a href="https://www.facebook.com/yusenkovych" class="footer__social">
                             <img src="/assets/images/logos/FacebookLogo.svg" alt="Facebook Logo">
                             Facebook
                         </a>
                         <a href="https://www.instagram.com/yan_baklan/" class="footer__social">
                             <img src="/assets/images/logos/InstagramLogo.svg" alt="Instagram Logo">
                             Instagram
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Mobile menu -->
     <div class="mobile-menu">
         <svg class="mobile-menu__close" width="22" height="22" viewBox="0 0 22 22" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -97,6 +112,7 @@
             </div>
         </div>
     </div>
+    <!-- Header -->
     <header>
         <div class="container header__container">
             <a href="#hero-section" class="header__logo">
@@ -112,6 +128,7 @@
             </div>
         </div>
     </header>
+    <!-- Website content -->
     <main>
         <section class="hero-section" id="hero-section">
             <div class="container hero-section__container">
@@ -222,6 +239,7 @@
             </div>
         </section>
     </main>
+    <!-- Footer -->
     <footer>
         <div class="container footer__container">
             <div class="footer__navigation">
@@ -232,14 +250,14 @@
                             <img src="/assets/images/logos/LinkedinLogo.svg" alt="Linkedin Logo">
                             LinkedIn
                         </a>
-                        <a href="https://www.facebook.com/yusenkovych" class="footer__social">
+                        <!-- <a href="https://www.facebook.com/yusenkovych" class="footer__social">
                             <img src="/assets/images/logos/FacebookLogo.svg" alt="Facebook Logo">
                             Facebook
                         </a>
                         <a href="https://www.instagram.com/yan_baklan/" class="footer__social">
                             <img src="/assets/images/logos/InstagramLogo.svg" alt="Instagram Logo">
                             Instagram
-                        </a>
+                        </a> -->
                     </div>
                     <h4>Email</h4>
                     <a href="mailto:hello@conse.in" class="footer__mail">hello@conse.in</a>
@@ -258,8 +276,36 @@
         </div>
     </footer>
 
-    <!-- javascript -->
+    <!-- JavaScript -->
     <script type="module" src="/assets/js/main.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- AJAX form -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"
+        integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(() => {
+            $('.contact-us__form').ajaxForm({
+                url: '/assets/php/mailer.php',
+                type: 'post',
+                beforeSerialize: () => {
+
+                },
+                success: () => {
+                    $('.contact-us-popup').removeClass('active');
+                    $('.contact-us-popup input, .contact-us-popup textarea').val('');
+                },
+                error: () => {
+                    console.error('fuck!');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

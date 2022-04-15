@@ -1,10 +1,20 @@
 /* File structure:
+[Page loader]
 [Reactive header]
 [Mobile menu] 
 [Contact us popup]
 */
 
 window.addEventListener('DOMContentLoaded', () => {
+    // [Page loader]
+    setTimeout(hidePageLoader, 500);
+
+    const pageLoader = document.querySelector('.page-loader');
+    function hidePageLoader() {
+        document.body.classList.remove('disable-scroll-js');
+        pageLoader.classList.add('page-loader--hidden');
+    }
+
     // [Reactive header]
     const header = document.querySelector('header');
     document.addEventListener('scroll', () => {
